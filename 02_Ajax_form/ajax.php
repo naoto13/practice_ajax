@@ -11,11 +11,10 @@ if(!empty($_POST)){
     );
 
     $dbh = new PDO($dsn, $user, $password, $options);
-    $stmt = $dbh->prepare('SELECT * FROM users WHERE email =:email');
+    $stmt = $dbh->prepare('SELECT * FROM users WHERE email = :email');
     //プレースホルダーに値をセットし、SQL文を実行
     $stmt->execute(array(':email' => $_POST['email']));
-
-    
+// ここまではほぼお決まり
     $result = 0;
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 

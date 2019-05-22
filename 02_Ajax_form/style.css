@@ -23,11 +23,11 @@
     display: block;
     margin: 0;
 }
-.inputText .is-error{
+.inputText.is-error{
     border-color: #FF1493;
     background: #fff8f9;
 }
-.inputText .is-success{
+.inputText.is-success{
     border-color: #32acee;
     background: #e1e5ee;
 }
@@ -42,9 +42,9 @@
 .msgArea{
     display: block;
 }
-.msgArea .is-error{
+.msgArea.is-error{
     color: #FF1493;
 }
-.msgArea .is-success{
+.msgArea.is-success{
     color: #32acee;
 }
